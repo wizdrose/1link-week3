@@ -1,0 +1,14 @@
+7	minh	hanoi	nam	6	8	8	
+9	duc	cau giay	nam	2	2	2	
+10	binh	hatay	nu	9	9	9	
+11	m	m	m	7	7	7	
+17	r	r	r	0	5	5	
+18	e	e	e	4	4	4	
+19	son	hoangmai	nam	8	8	8		
+30	chung	hanoi	nam	3	3	3	
+62	hoang	hanoi	nam	9	9	9	
+30	chung	hanoi	nam	3	3	3	
+62	hoang	hanoi	nam	9	9	9	
+50	thang	mydinh	10	10	10	10	
+53	kien	caudien	10	10	10	10	
+70	hung	hanoi	nam	9	9	9	

@@ -1,0 +1,8 @@
+1	1	1	1	1	1	1	
+2	vu thang	ha noi	nu	3	3	3	
+3	3	3	3	3	3	3	
+8	2	2	2	2	2	2	
+5	5	5	5	5	5	5	
+6	6	6	6	6	6	6	
+7	minh	hanoi	nam	6	8	8	
+9	duc	cau giay	nam	2	2	2	
