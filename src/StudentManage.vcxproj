@@ -80,6 +80,7 @@
     <ClCompile Include="StudentView.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="ListFile.txt" />
     <Text Include="Text.txt" />
     <Text Include="Text2.txt" />
   </ItemGroup>

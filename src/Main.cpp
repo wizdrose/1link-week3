@@ -5,10 +5,30 @@
 #include <string>
 #include <cstdlib>
 #include<thread>
-#include<vector>
+#include<vector>.
 #include<Windows.h>
-vector<string> list_file;
 void WINAPI readThread();
+void writeList(string path, string s)
+{
+		ofstream fo;
+		fo.open(path, ios::out | ios::app);
+		fo << s << endl;
+		fo.close();
+}
+vector<string> Read(string path)
+{
+	vector<string> lst_file;
+	ifstream f;
+	string line;
+	f.open(path, ios::in);
+	while (getline(f, line))
+	{
+		lst_file.push_back(line);
+	}
+	f.close();
+	return lst_file;
+}
+vector<string> list_file=Read("ListFile.txt");
 int main()
 {
 	HANDLE handel = CreateThread(0, NULL, (LPTHREAD_START_ROUTINE)readThread, 0, NULL, 0);
@@ -95,6 +115,7 @@ int main()
 }
 void WINAPI readThread()
 {
+	list_file = Read("ListFile.txt");
 	StudentRepository std_repository;
 	string path = "C:\\Users\\wizdrose\\Documents\\Visual Studio 2015\\Projects\\TestThread\\TestThread\\Content\\";
 	/*cout << "Your path: ";
@@ -117,6 +138,7 @@ void WINAPI readThread()
 			if (it == list_file.end())
 			{
 				list_file.push_back(file_path);
+				writeList("ListFile.txt", file_path);
 				ifstream file;
 				file.open(file_path.c_str(), ios::in);
 				while (getline(file, line))

@@ -1,0 +1,4 @@
+C:\Users\wizdrose\Documents\Visual Studio 2015\Projects\TestThread\TestThread\Content\thkk.txt
+C:\Users\wizdrose\Documents\Visual Studio 2015\Projects\TestThread\TestThread\Content\tru.txt
+C:\Users\wizdrose\Documents\Visual Studio 2015\Projects\TestThread\TestThread\Content\tttt.txt
+C:\Users\wizdrose\Documents\Visual Studio 2015\Projects\TestThread\TestThread\Content\tien.txt
