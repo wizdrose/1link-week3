@@ -20,6 +20,7 @@ public:
 	void sortStudent();
 	void statisticStudent();
 	void listStudent(list<Student>);
+	bool checkID(int);
 	StudentContrller();
 	~StudentContrller();
 };

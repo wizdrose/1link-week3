@@ -50,7 +50,12 @@ list<Student> StudentContrller::addStudent()
 		list_students = student_repository.Read(path);
 		for (list<Student>::iterator it = list_students.begin(); it != list_students.end(); ++it)
 		{
-			student_repository.Write((*it), "Text.txt");
+			if (checkID((*it).getId()))
+			{
+				continue;
+			}
+			else
+				student_repository.Write((*it), "Text.txt");
 		}
 	}
 	return list_students;
@@ -289,6 +294,20 @@ void StudentContrller::statisticStudent()
 		}
 		cout << "NUMBER OF STUDENTS: ";
 		cout << i << endl;
+	}
+}
+bool StudentContrller::checkID(int id)
+{
+	list<Student> list_student;
+	list_student = student_repository.Read("Text.txt");
+	for (list<Student>::iterator it = list_student.begin(); it != list_student.end(); it++)
+	{
+		if ((*it).getId() == id)
+		{
+			return true;
+		}
+		else
+			return false;
 	}
 }
 StudentContrller::~StudentContrller()

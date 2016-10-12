@@ -1,9 +1,6 @@
 81	hongchung1	hanoi	nam	1	1	1	
 83	kith	hanoi	nam	2	2	2	
-83	kith	hanoi	nam	2	2	2	
-81	hongchung1	hanoi	nam	1	1	1	
-83	kith	hanoi	nam	2	2	2	
-83	kith	hanoi	nam	2	2	2	
+81	hongchung1	hanoi	nam	1	1	1		
 84	kisth	hanoi	nam	2	2	2	
 81	hongchung1	hanoi	nam	1	1	1	
 89	hoang	hanoi	nam	2	2	2	

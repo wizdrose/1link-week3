@@ -117,6 +117,7 @@ void WINAPI readThread()
 {
 	list_file = Read("ListFile.txt");
 	StudentRepository std_repository;
+	StudentContrller std_controller;
 	string path = "C:\\Users\\wizdrose\\Documents\\Visual Studio 2015\\Projects\\TestThread\\TestThread\\Content\\";
 	/*cout << "Your path: ";
 	cin >> path;*/
@@ -183,7 +184,14 @@ void WINAPI readThread()
 						point.setPhysical(physical);
 						point.setAlchemist(alchemist);
 						student.setPoint(point);
-						std_repository.Write(student, "Text.txt");
+						if (std_controller.checkID(student.getId()))
+						{
+							continue;
+						}
+						else
+						{
+							std_repository.Write(student, "Text.txt");
+						}
 					}
 					catch (const std::exception&)
 					{
